@@ -40,7 +40,10 @@ const Navbar = () => {
                             <h2 className="text-2xl font-bold">James Whicker</h2>
                         </div>
                         <div className="md:hidden">
-                            <button onClick={()=>setNavbar(!navbar)}>
+                            <button
+                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                onClick={()=>setNavbar(!navbar)}
+                            >
                                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
                             </button>
                         </div>
